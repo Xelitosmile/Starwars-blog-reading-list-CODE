@@ -1,0 +1,39 @@
+body {
+    background: black;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/108/199/778/star-wars-battlefront-darth-vader-sith-video-games-wallpaper-preview.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+div .containerprincipal{
+    margin-top: 50px;
+    margin-left: 380px;
+}
+
+
+
+.firsttitle{
+    text-align: center;
+    margin-top: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color: rgb(213, 213, 0);
+}
+
+.navtitle{
+    color:rgb(213, 213, 0);
+}
+
+#starwarnav{
+    width: 80px;
+}
+
+.tinfo1{
+    color:rgb(213, 213, 0);
+    text-align: center;
+    margin-top: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+
