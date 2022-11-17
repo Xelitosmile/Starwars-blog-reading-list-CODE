@@ -4,6 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			personajeSW: [],
 			planetasSW:[],
+			favorites: [],
 			demo: [
 				
 
@@ -41,6 +42,33 @@ const getState = ({ getStore, getActions, setStore }) => {
   				.then(data => setStore({planetasSW:data.results}))
   				.catch(error => console.log('error', error));
 			},
+
+			addFavorites: (item) => {
+
+                const store = getStore();
+                if (!store.favorites.includes(item)) {
+                    setStore({
+                        favorites: [...store.favorites, item]
+                    });
+                } else {
+                    setStore({
+                        favorites: store.favorites.filter((name) =>
+                            name !== item)
+                    })
+                }
+
+            },
+
+            deleteFavorites: (index) => {
+
+                const store = getStore();
+
+                setStore({
+                    favorites: store.favorites.filter((favorites, i) => i !== index)
+                })
+
+
+            },
 
 
 
